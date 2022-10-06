@@ -4,10 +4,11 @@ specifiers:
   '@0x-jerry/utils': ^1.9.0
   '@0x-jerry/x-release': ^0.3.6
   '@types/node': ^18.8.2
-  c8: ^7.12.0
+  '@vitest/coverage-c8': ^0.23.4
   tsup: ^6.2.3
   typescript: ^4.8.4
   vitest: ^0.23.4
+  vitest-github-actions-reporter: ^0.8.3
 
 dependencies:
   '@0x-jerry/utils': 1.9.0
@@ -15,10 +16,11 @@ dependencies:
 devDependencies:
   '@0x-jerry/x-release': 0.3.6
   '@types/node': 18.8.2
-  c8: 7.12.0
+  '@vitest/coverage-c8': 0.23.4
   tsup: 6.2.3_typescript@4.8.4
   typescript: 4.8.4
   vitest: 0.23.4
+  vitest-github-actions-reporter: 0.8.3_vitest@0.23.4
 
 packages:
 
@@ -51,6 +53,19 @@ packages:
       unconfig: 0.2.2
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@actions/core/1.10.0:
+    resolution: {integrity: sha512-2aZDDa3zrrZbP5ZYg159sNoLRb61nQ7awl5pSvIq5Qpj81vwDzdMRKzkWJGJuwVvWpvZKx7vspJALyvaaIQyug==}
+    dependencies:
+      '@actions/http-client': 2.0.1
+      uuid: 8.3.2
+    dev: true
+
+  /@actions/http-client/2.0.1:
+    resolution: {integrity: sha512-PIXiMVtz6VvyaRsGY268qvj57hXQEpsYogYOu2nrQhlf+XCGmZstmuZBbAybUl1nQGnvS1k1eEsQ69ZoD7xlSw==}
+    dependencies:
+      tunnel: 0.0.6
     dev: true
 
   /@antfu/utils/0.3.0:
@@ -152,6 +167,24 @@ packages:
 
   /@types/throttle-debounce/2.1.0:
     resolution: {integrity: sha512-5eQEtSCoESnh2FsiLTxE121IiE60hnMqcb435fShf4bpLRjEu1Eoekht23y6zXS9Ts3l+Szu3TARnTsA0GkOkQ==}
+    dev: true
+
+  /@vitest/coverage-c8/0.23.4:
+    resolution: {integrity: sha512-jmD00a5DQH9gu9K+YdvVhcMuv2CzHvU4gCnySS40Ec5hKlXtlCzRfNHl00VnhfuBeaQUmaQYe60BLT413HyDdg==}
+    dependencies:
+      c8: 7.12.0
+      vitest: 0.23.4
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
     dev: true
 
   /@vue/reactivity/3.2.40:
@@ -1575,6 +1608,11 @@ packages:
       - ts-node
     dev: true
 
+  /tunnel/0.0.6:
+    resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
+    engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
+    dev: true
+
   /type-detect/4.0.8:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
@@ -1592,6 +1630,11 @@ packages:
       '@antfu/utils': 0.3.0
       defu: 5.0.1
       jiti: 1.16.0
+    dev: true
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
     dev: true
 
   /v8-to-istanbul/9.0.1:
@@ -1628,6 +1671,16 @@ packages:
       rollup: 2.78.1
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /vitest-github-actions-reporter/0.8.3_vitest@0.23.4:
+    resolution: {integrity: sha512-3mpZil8jAiWGt+w5NWzrewcPnXlUiUujMmjeZ0zhcva7cNW6k8DyMIBiq3bRGkhEL1FoG1sHFUj8/ONXnhGvZQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vitest: '>=0.16.0'
+    dependencies:
+      '@actions/core': 1.10.0
+      vitest: 0.23.4
     dev: true
 
   /vitest/0.23.4:

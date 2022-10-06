@@ -15,7 +15,7 @@ jobs:
         run: curl -f https://get.pnpm.io/v6.14.js | node - add --global pnpm@7
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: https://registry.npm.taobao.org
@@ -26,7 +26,7 @@ jobs:
       - run: pnpm run test:coverage
 
       - name: Upload to Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           files: ./coverage/clover.xml # optional
           flags: unittests # optional

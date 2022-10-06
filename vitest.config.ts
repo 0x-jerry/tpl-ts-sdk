@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitest/config'
+import GithubActionsReporter from 'vitest-github-actions-reporter'
 
 export default defineConfig({
   test: {
@@ -9,5 +10,6 @@ export default defineConfig({
       exclude: ['src/**/*.d.ts', 'src/**/*.test.ts'],
       reporter: ['clover', 'html-spa'],
     },
+    reporters: process.env.GITHUB_ACTIONS ? new GithubActionsReporter() : 'default',
   },
 })
