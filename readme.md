@@ -2,6 +2,6 @@
 
 ## TODO
 
-- [ ] run `pnpm init --yes`
+- [ ] run `npm init --yes`
 - [ ] change package metadata
 - [ ] rewrite this docs.
