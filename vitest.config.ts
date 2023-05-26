@@ -6,6 +6,7 @@ export default defineConfig({
     globals: true,
     environment: 'node',
     coverage: {
+      provider: 'c8',
       include: ['src/**/*.ts'],
       exclude: ['src/**/*.d.ts', 'src/**/*.test.ts'],
       reporter: ['clover', 'html-spa'],
