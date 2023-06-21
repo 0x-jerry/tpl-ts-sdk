@@ -4,6 +4,7 @@
     "module": "ESNext",
     "strict": true,
     "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
     "forceConsistentCasingInFileNames": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
