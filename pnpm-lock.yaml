@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@0x-jerry/utils':
-    specifier: ^1.18.0
-    version: 1.18.0
+    specifier: ^2.0.0
+    version: 2.0.0
 
 devDependencies:
   '@0x-jerry/x-release':
@@ -35,8 +35,8 @@ packages:
     resolution: {integrity: sha512-aV1qnSbezqlm1M4z+ZjL62p3u5q21986c445KDwJH1zgIErBlefXLf3Tv/Cao8DzA5o2P5iGFpeP2JNjhFRbNQ==}
     dev: true
 
-  /@0x-jerry/utils@1.18.0:
-    resolution: {integrity: sha512-EHKJSAI6H1etcFJv2jNRBV9YvkgeEvg2Ln5QJf0Uhhzg1U/CZgXTJNU35N5R545AlDC9pqxOv1Ojt4CI7iLNiQ==}
+  /@0x-jerry/utils@2.0.0:
+    resolution: {integrity: sha512-mdpbw3E6kQ8E2PZVfPREdnlA7m3mEsycXYPHvPErrp5lZduqa9ATvqnvInAYUj3u8d9q2Gk2825besoICmyvpQ==}
     dependencies:
       fflate: 0.8.0
       nanoid: 4.0.2
